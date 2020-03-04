@@ -28,6 +28,7 @@
 /vendor/bin/hw/android\.hardware\.authsecret@1\.0-service\.citadel                    u:object_r:hal_authsecret_citadel_exec:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.face@1\.0-service\.google               u:object_r:hal_face_default_exec:s0
 /vendor/bin/hw/android\.hardware\.camera\.provider@2\.4-service-google                u:object_r:hal_camera_default_exec:s0
+/vendor/bin/hw/android\.hardware\.contexthub@1\.1-service\.generic                    u:object_r:hal_contexthub_default_exec:s0
 /vendor/bin/hw/android\.hardware\.keymaster@4\.0-service\.citadel                     u:object_r:hal_keymaster_citadel_exec:s0
 /vendor/bin/hw/android\.hardware\.neuralnetworks@1\.2-service-noronha                 u:object_r:hal_neuralnetworks_darwinn_exec:s0
 /vendor/bin/hw/android\.hardware\.oemlock@1\.0-service\.citadel                       u:object_r:hal_oemlock_citadel_exec:s0
@@ -53,7 +54,7 @@
 /vendor/bin/init\.ramoops\.sh                                                         u:object_r:ramoops_exec:s0
 /vendor/bin/modem_svc                                                                 u:object_r:modem_svc_exec:s0
 /vendor/bin/ramoops                                                                   u:object_r:ramoops_exec:s0
-/vendor/bin/hw/android\.hardware\.dumpstate@1\.0-service\.coral                       u:object_r:hal_dumpstate_impl_exec:s0
+/vendor/bin/hw/android\.hardware\.dumpstate@1\.[01]-service\.coral                    u:object_r:hal_dumpstate_impl_exec:s0
 /vendor/bin/ramdump                                                                   u:object_r:ramdump_exec:s0
 /vendor/bin/rlsservice                                                                u:object_r:rlsservice_exec:s0
 /vendor/bin/init\.radio\.sh                                                           u:object_r:init_radio_exec:s0
