@@ -36,6 +36,9 @@ get_prop(hal_dumpstate_impl, boottime_public_prop)
 # Access to thermal debug data
 r_dir_file(hal_dumpstate_impl, sysfs_thermal)
 
+# Access to /sys/devices/soc0/serial_number
+r_dir_file(hal_dumpstate_impl, sysfs_soc)
+
 # Access to files for dumping
 allow hal_dumpstate_impl sysfs:dir r_dir_perms;
 
@@ -57,6 +60,8 @@ allow hal_dumpstate_impl debugfs_dma_buf:file r_file_perms;
 
 # Battery/Charger/Guage
 allow hal_dumpstate_impl debugfs_batteryinfo:file r_file_perms;
+allow hal_dumpstate_impl sysfs_chargelevel:file r_file_perms;
+allow hal_dumpstate_impl sysfs_batteryinfo:file r_file_perms;
 
 # Dump PMIC data
 allow hal_dumpstate_impl debugfs_pmic:dir r_dir_perms;
